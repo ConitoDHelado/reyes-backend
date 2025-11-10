@@ -2,18 +2,21 @@
   "name": "reyes-backend",
   "version": "1.0.0",
   "description": "Repo para el backend de la web de la lista de reyes",
-  "main": "index.js",
+  "main": "src/index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ConitoDHelado/reyes-backend.git"
+    "url": "https://github.com/ConitoDHelado/reyes-backend.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "author": "ConitoDHelado",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ConitoDHelado/reyes-backend/issues"
   },
@@ -22,7 +25,13 @@
     "@prisma/client": "^6.19.0",
     "cors": "^2.8.5",
     "express": "^5.1.0",
-    "prisma": "^6.19.0",
     "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "prisma": "^6.19.0",
+    "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
