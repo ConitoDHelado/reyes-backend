@@ -1,0 +1,28 @@
+{
+  "name": "reyes-backend",
+  "version": "1.0.0",
+  "description": "Repo para el backend de la web de la lista de reyes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConitoDHelado/reyes-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ConitoDHelado/reyes-backend/issues"
+  },
+  "homepage": "https://github.com/ConitoDHelado/reyes-backend#readme",
+  "dependencies": {
+    "@prisma/client": "^6.19.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "prisma": "^6.19.0",
+    "sqlite3": "^5.1.7"
+  }
+}
