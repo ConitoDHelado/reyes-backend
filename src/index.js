@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import { PrismaClient } from "@prisma/client";
 import bcrypt from "bcrypt";
+import userRouter from "./routes/users.js";
 
 const app = express();
 const prisma = new PrismaClient();
