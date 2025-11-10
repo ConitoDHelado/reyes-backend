@@ -1,6 +1,6 @@
 datasource db {
   provider = "postgresql"
-  url      = env("postgresql://reyes_db_user:W1hMlXWzIcCvyyRmAvyNz35RTwcHXxAH@dpg-d48r30mmcj7s73e4jl1g-a.frankfurt-postgres.render.com/reyes_db")
+  url = env("DATABASE_URL")
 }
 
 generator client {
