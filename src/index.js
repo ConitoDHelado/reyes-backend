@@ -11,6 +11,13 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 4000;
 
+app.use(cors({
+  origin: ["http://127.0.0.1:5500", "https://conitodhelado.github.io"] // your frontend URLs
+}));
+app.use(express.json());
+
+app.use("/users", userRouter); // mount the users router
+
 // --- USERS ---
 
 // Register
