@@ -7,14 +7,14 @@ generator client {
   provider = "prisma-client-js"
 }
 
-model User {
+model user {
   id       Int     @id @default(autoincrement())
   username String  @unique
   password String
-  gifts    Gift[]
+  gifts    gift[]
 }
 
-model Gift {
+model gift {
   id      Int     @id @default(autoincrement())
   name    String
   price   Float?
@@ -22,5 +22,5 @@ model Gift {
   url     String 
   bought  Boolean @default(false)
   userId  Int
-  user    User    @relation(fields: [userId], references: [id])
+  user    user    @relation(fields: [userId], references: [id])
 }
